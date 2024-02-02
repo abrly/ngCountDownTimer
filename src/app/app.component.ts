@@ -9,5 +9,23 @@ import { RouterOutlet } from '@angular/router';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'sampleapp';
+  
+  title = 'count-down timer app';
+
+  timer="";
+
+  ngOnInit() {
+    let countdown = 10;
+    this.timer = countdown.toString();
+    var refreshId= setInterval(() => {
+          countdown = --countdown;
+          if (countdown === 0) {
+            clearInterval(refreshId);
+          }
+          this.timer = countdown.toString();
+  }, 1000);
+
+}
+
+
 }

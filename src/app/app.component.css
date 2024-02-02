@@ -1,0 +1,17 @@
+.otp_timer {
+    position: relative;
+    overflow: visible;
+    background-color: rgb(255 255 255 / 0%);
+    border: #cacaca 2px solid;
+    border-radius: 210px;
+    height: 120px;
+    width: 140px;
+    align-items: center;
+    text-align: center;
+    background: #FFF;
+    margin: 20px auto;
+    animation: mymove 1s infinite alternate;
+    animation-delay: 10s;
+    -webkit-animation: mymove 1s infinite alternate;
+    font-size:xx-large
+}
